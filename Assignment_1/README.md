@@ -17,7 +17,7 @@ Perform the Following Steps :
 
 - Modify the content index.html so that it looks like this : 
 
-![UI](./images/firefox-logo.png)
+![UI](./images/ind.png)
 
 - Push Your Repository to github
 - Submit the Github Repository URL
