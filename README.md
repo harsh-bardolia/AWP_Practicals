@@ -1,3 +1,3 @@
 # AWP_Practicals
 
-![alt text]('./images/AWP.jpg')
+![UI]('./Assigment_1/images/AWP.jpg')

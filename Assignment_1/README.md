@@ -1,6 +1,5 @@
 # AWP_Practicals
 
-![alt text]('./images/AWP.jpg')
 
 ## Assignment 1 
 
@@ -14,11 +13,11 @@ Perform the Following Steps :
 - Clone that newly created repository in your computer via Visual Studio Code
 - Create directory structure like this  :
 
-![alt text]('./images/file-structure.png')
+![UI]('./images/file-structure.png')
 
 - Modify the content index.html so that it looks like this : 
 
-![alt text]('./images/firefox-logo.png')
+![UI]('./images/firefox-logo.png')
 
 - Push Your Repository to github
 - Submit the Github Repository URL
