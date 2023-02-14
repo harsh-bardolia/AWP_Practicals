@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="flex flex-col items-center bg-[#050A30] h-screen">
+        <h1 class="font-bold text-4xl text-[#7EC8E3]">Guessing Game</h1>
+        <p class="pb-4 text-[#D4F1F4] ">Here you need to click on the below button to guess the number, which computer has chosen
+        </p>
+        <input type="number" id="takeInput" class="border border-blue-800 rounded-lg px-4 py-2 my-2"
+            placeholder="Enter a number"></input>
+        <button id="btn" onclick="guessTheGame()" class="px-6 py-3 bg-[#75E6DA] text-black font-bold rounded-lg">
+            Guess the Number
+        </button>
+        <div id="result" class="text-[#7EC8E3]" ></div>
+    </div>
+
+    <script>
+        const takeInput = document.querySelector('#takeInput');
+        const guess = Math.floor(Math.random() * 100);
+        const btn = document.querySelector('#btn');
+        const result = document.querySelector('#result');
+
+        const guessTheGame = () => {
+            console.log(guess);
+            console.log(takeInput.value);
+            if(!takeInput.value){
+                result.innerHTML = "Please enter any value";
+                return;
+            }
+            else if (guess > takeInput.value) {
+                result.innerHTML = "The Number is smaller than the Guess number. Try Again ! " + guess + " is the guessing number.";
+            }
+            else if (guess < takeInput.value) {
+                result.innerHTML = "The Number is Larger than the Guess number. Try Again ! " + guess + " is the guessing number.";
+            }
+            else {
+                result.innerHTML = "Congrats !! You guess the Right one." + guess + " is the Corrent guessing number.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
